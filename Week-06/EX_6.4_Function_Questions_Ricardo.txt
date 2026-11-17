@@ -1,0 +1,26 @@
+EXERCISE 6.4 - PART 3: UNDERSTANDING FUNCTIONS
+Name: Ricardo
+
+1. What is a user-defined function in Python?
+A user-defined function is a block of code that we create to do a specific job. We can call it whenever we need that job done instead of writing the same code again.
+
+2. What is the difference between a parameter and an argument?
+A parameter is a variable listed when we define a function. An argument is the actual value we give that parameter when we call the function.
+
+3. What is the purpose of the return statement?
+The return statement sends a result from a function back to the code that called it. We can save that result in a variable and use it later.
+
+4. What is the difference between print() and return?
+print() displays something on the screen for us to see. return sends a value back to the program so other code can use it.
+
+5. Why is it beneficial to divide a large program into smaller functions?
+Smaller functions make a program easier to read and understand. They also help us find mistakes and reuse code without repeating it.
+
+6. In the code below, identify the function name, the parameters, and the arguments.
+
+def calculate_commission(amount, rate):
+    return amount * rate
+
+commission = calculate_commission(5200, 0.05)
+
+The function name is calculate_commission, and its parameters are amount and rate. The arguments are 5200 and 0.05 because those are the values passed into the function when it is called.

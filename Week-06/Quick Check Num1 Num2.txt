@@ -1,0 +1,17 @@
+DEFINE compare_numbers(num1, num2)
+
+    IF num1 is greater than num2
+        DISPLAY num1 is greater
+
+    ELSE IF num2 is greater than num1
+        DISPLAY num2 is greater
+
+    ELSE
+        DISPLAY both numbers are equal
+
+ASK user for first number
+ASK user for second number
+
+CALL compare_numbers with both numbers
+
+END
