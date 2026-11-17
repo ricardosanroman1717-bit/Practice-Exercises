@@ -1,0 +1,22 @@
+EXERCISE 6.3 - CHALLENGE QUESTIONS
+
+1. Why is the mean useful when analyzing daily sales?
+The mean shows the average amount sold each day. It helps the company understand its overall sales performance.
+
+2. What is the difference between the mean and median?
+The mean is the total of all sales divided by the number of days. The median is the middle value after the sales amounts are sorted.
+
+3. Why might the standard deviation be useful to a business?
+It shows how much sales change from day to day. The company can use it to see whether daily sales are consistent.
+
+4. Which day generated the highest sales?
+Thursday of Week 2 had the highest sales at $2,100.00.
+
+5. How many days achieved the company's $1,500 sales target?
+5 out of 10 days reached the target.
+
+6. Which sales performance category had the most days?
+Average had the most days, with 4 days.
+
+7. If the company wants to increase its average daily sales to $1,700, what changes might it consider?
+The company could offer promotions, suggest related products to customers, and study what worked well on the highest-sales days. It could also improve sales on slower days.
