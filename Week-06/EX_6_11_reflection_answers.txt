@@ -1,0 +1,19 @@
+EX 6.11 - Reflection Questions
+
+1. What is the difference between except ValueError and except Exception? When would you prefer the more specific clause?
+ValueError handles a value that is the wrong kind for an operation, like trying to turn "N/A" into a number. Exception catches many different errors. I would use ValueError when I know what could go wrong, because it lets me give a more useful message without hiding unrelated bugs.
+
+2. Explain in your own words why the else clause exists. Could you achieve the same result by putting that code at the bottom of the try block instead?
+The else block runs only when the try block succeeds. You could put that code at the bottom of try, but else makes it clearer which code is for successful results. It also keeps problems in the success code separate from the errors the except blocks are supposed to handle.
+
+3. Why must finally close the error log file rather than just putting error_log.close() after the try block?
+Finally runs even when an error happens. That makes sure the log file gets closed and its information is saved. A normal line after try might never run if an unexpected error stops the program.
+
+4. In the loop, the except clause uses continue to skip bad records. What would happen if you used break instead? When might break be the right choice?
+Continue skips only the bad record and moves on to the next one. Break would stop the whole loop, so the remaining sensor records would not be checked. Break would make sense if a serious problem made it unsafe or pointless to keep processing.
+
+5. What is the advantage of defining OutOfRangeError as a custom exception class rather than just raising a plain ValueError with a descriptive message?
+OutOfRangeError tells us that the number was readable but the measurement was outside the allowed limits. That makes it easier to separate bad number formatting from impossible sensor readings and handle each problem differently.
+
+6. In a real analytics pipeline processing millions of sensor records, what additional information would you include in the error log entries to make debugging faster?
+I would include the date and time, sensor ID, record number, original value, input filename, and the reason for the error. A batch ID would also help find all errors from the same upload.
