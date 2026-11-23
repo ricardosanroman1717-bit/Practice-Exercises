@@ -1,0 +1,5 @@
+Record 3 [ValueError]: could not convert string to float: 'N/A'
+Record 4 [ValueError]: could not convert string to float: 'MISSING'
+Record 5 [OutOfRangeError]: Temp 99.0 C outside -40 to 85
+Record 6 [OutOfRangeError]: Humidity 110.0% outside 0 to 100
+Record 7 [ValueError]: Expected 3 fields, got 1: ''

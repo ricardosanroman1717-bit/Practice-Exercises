@@ -1,0 +1,33 @@
+=== Customer Interaction Log | Entries: 4 ===
+Date       | Customer        | Issue           | Rep
+------------------------------------------------------------
+2025-05-01 | Alice Nguyen    | Billing query   | J. Park
+2025-05-01 | Bob Carter      | Login issue     | S. Diaz
+2025-05-02 | Carol Singh     | Refund request  | J. Park
+2025-05-02 | Alice Nguyen    | Follow-up       | M. Lee
+
+=== Reflection Questions and Answers ===
+1. What happens to existing file content when you open a file with 'w' mode? How is this different from 'a' mode?
+
+'w' mode erases the old content and starts fresh. 'a' mode keeps the old content and adds new information to the end of the file.
+
+2. Why is the with statement preferred over manually calling f.close()?
+
+The with statement closes the file automatically when I'm done with it, even if something goes wrong. That means I don't have to remember to close it myself.
+
+3. What is the difference between .read(), .readline(), and .readlines()? When would you choose each?
+
+.read() gets the entire file as one string, so I'd use it to display the full log. .readline() gets one line at a time, which is useful for the header. .readlines() gets all the lines in a list, which makes it easier to search or count records.
+
+4. Explain why .seek(0) is necessary when using 'r+' mode to update the header line.
+
+After reading the file, the cursor is at the end. .seek(0) moves it back to the beginning so the program can replace the first line with the updated entry count.
+
+5. In a real analytics pipeline, why would you write interaction records to a file rather than just printing them to the terminal?
+
+Saving the records to a file means the information is still there after the program closes. I could use it later to check customer issues, look for patterns, or make reports. Terminal output by itself isn't a reliable place to store those records.
+
+6. What would happen if you called .writelines() with a list that had no '\n' at the end of each string?
+
+All the strings would be written together without line breaks. The customer records would run into each other and be much harder to read.
+=== End of Reflection Answers ===
