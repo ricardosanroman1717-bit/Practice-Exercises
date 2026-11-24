@@ -1,0 +1,17 @@
+order_id,order_date,store,drink,qty,price,notes
+1001,1/5/2026,Back Bay,Latte,2,4.75,
+1002,1/9/2026,Kendall Square,Cold Brew,1,4.25,
+1003,1/14/2026,Seaport,Mocha,3,5.25,new customer
+1004,1/17/2026,Back Bay,Chai,1,4.5,
+1005,1/28/2026,Kendall Sq,Latte,4,4.75,
+1005,1/28/2026,Kendall Sq,Latte,4,4.75,
+1006,2/3/2026,Seaport,Latte,2,4.75,
+1007,2/8/2026,Back Bay,Cold Brew,-2,4.25,
+1008,2/12/2026,Kendall Square,Mocha,1,,
+1009,2/21/2026,Seaport,Chai,2,4.5,
+1010,3/2/2026,Back Bay,Latte,3,4.75,office order
+1011,3/6/2026,Kendall Square,Espresso,2,3,
+1012,3/14/2026,Seaport,Cold Brew,50,4.25,
+1013,3/19/2026,Back Bay,Mocha,2,5.25,
+1014,3/27/2026,Kendall Sq,Chai,1,4.5,
+1015,3/28/2026,Seaport,Latte,1,4.75,
